@@ -2,9 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Run Docker Compose for both Dev and Prod environments
 
-In the project directory, you can run:
+# Dev ENV:
+docker-compose -f docker-compose.yml -f docker-compose-dev.yml up -d --build
+
+# Stopping Dev ENV:
+docker-compose -f docker-compose.yml -f docker-compose-dev.yml down
+
+# Prod ENV:
+docker-compose -f docker-compose.yml -f docker-compose-prod.yml up -d --build
+
+# Stopping Prod ENV:
+docker-compose -f docker-compose.yml -f docker-compose-prod.yml down
 
 ### `npm start`
 
